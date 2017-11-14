@@ -4,12 +4,20 @@ import UIKit
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     //---------------------------//--------------------------- MARK: -------> IBOutlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var datePickerFrom: UIDatePicker!
+    @IBOutlet weak var datePickerTo: UIDatePicker!
     //---------------------------//--------------------------- MARK: -------> Properties
     var titles = ["CAMÉRAS", "LENTILLES", "TRÉPIEDS"]
     var numberOfElementsInSections = [12, 5, 3]
     //---------------------------//--------------------------- MARK: -------> viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        datePickerFrom.setValue(UIColor.white, forKeyPath: "textColor")
+        datePickerFrom.setValue(false, forKeyPath: "highlightsToday")
+        datePickerTo.setValue(UIColor.white, forKeyPath: "textColor")
+        datePickerTo.setValue(false, forKeyPath: "highlightsToday")
+        
     }
     //---------------------------//--------------------------- MARK: -------> TableView Section Stuff
     func numberOfSections(in tableView: UITableView) -> Int {

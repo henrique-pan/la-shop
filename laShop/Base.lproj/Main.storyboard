@@ -9,6 +9,14 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="TitilliumWeb-Regular.ttf">
+            <string>TitilliumWeb-Regular</string>
+        </array>
+        <array key="TitilliumWeb-SemiBold.ttf">
+            <string>TitilliumWeb-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -26,15 +34,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="371"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae6-kM-9Cv">
-                                        <rect key="frame" x="335" y="316" width="99" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.75129935930933134" blue="0.59260725715047857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="334" y="316" width="101" height="38"/>
+                                        <color key="backgroundColor" red="0.54359829429999995" green="0.038130339239999998" blue="0.068872511390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="17"/>
                                         <state key="normal" title="SAUVEGARDE">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="w1B-rf-Odf">
                                         <rect key="frame" x="55" y="200" width="320" height="100"/>
-                                        <color key="backgroundColor" red="0.75333681610000003" green="0.76214378230000002" blue="0.2649074105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="NR8-m0-gyu"/>
                                         </constraints>
@@ -44,14 +54,15 @@
                                     </datePicker>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="aJk-N6-Yq8">
                                         <rect key="frame" x="400" y="200" width="320" height="100"/>
-                                        <color key="backgroundColor" red="0.75333681610000003" green="0.76214378230000002" blue="0.2649074105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <date key="date" timeIntervalSinceReferenceDate="521308713.554254">
                                             <!--2017-07-09 15:58:33 +0000-->
                                         </date>
                                     </datePicker>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qoi-BH-wLf">
                                         <rect key="frame" x="55" y="28" width="240" height="85"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="UaW-dt-9nx"/>
                                             <constraint firstAttribute="height" constant="85" id="n0M-r9-NMj"/>
@@ -60,30 +71,39 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NOM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RK0-go-6Xh">
                                         <rect key="frame" x="55" y="148" width="320" height="30"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="COURRIEL" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="79A-I4-5Os">
                                         <rect key="frame" x="400" y="148" width="320" height="30"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVc-xR-RAT">
-                                        <rect key="frame" x="554" y="56" width="166" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.75129935930000002" blue="0.59260725719999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="INTERFACE PRINCIPALE">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVc-xR-RAT">
+                                        <rect key="frame" x="470" y="38.5" width="250" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="QKc-Te-bgP"/>
+                                        </constraints>
+                                        <state key="normal" image="button3">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="3SB-jS-uDd" kind="presentation" id="Qxc-v5-fyW"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interface Principale       " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpW-AA-cSG">
+                                        <rect key="frame" x="495" y="57.5" width="200" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.21532139180000001" green="0.22286033629999999" blue="0.26020103690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="79A-I4-5Os" firstAttribute="centerY" secondItem="RK0-go-6Xh" secondAttribute="centerY" id="1hT-KU-hcA"/>
                                     <constraint firstItem="aJk-N6-Yq8" firstAttribute="top" secondItem="w1B-rf-Odf" secondAttribute="top" id="1lz-JF-BNL"/>
+                                    <constraint firstItem="VpW-AA-cSG" firstAttribute="centerY" secondItem="lVc-xR-RAT" secondAttribute="centerY" id="5Ei-4d-sBX"/>
                                     <constraint firstAttribute="height" constant="371" id="5uv-f6-KEY"/>
                                     <constraint firstItem="lVc-xR-RAT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Crr-s5-rnM" secondAttribute="leading" constant="20" symbolic="YES" id="622-OI-VH6"/>
                                     <constraint firstAttribute="trailing" secondItem="79A-I4-5Os" secondAttribute="trailing" constant="48" id="6G6-8a-93l"/>
@@ -92,6 +112,7 @@
                                     <constraint firstItem="w1B-rf-Odf" firstAttribute="leading" secondItem="RK0-go-6Xh" secondAttribute="leading" id="7zJ-Em-EkO"/>
                                     <constraint firstItem="79A-I4-5Os" firstAttribute="width" secondItem="RK0-go-6Xh" secondAttribute="width" id="8px-oG-ilj"/>
                                     <constraint firstItem="lVc-xR-RAT" firstAttribute="trailing" secondItem="79A-I4-5Os" secondAttribute="trailing" id="Aab-Gy-JPz"/>
+                                    <constraint firstItem="VpW-AA-cSG" firstAttribute="width" secondItem="lVc-xR-RAT" secondAttribute="width" multiplier="0.8" id="BEi-7I-Xan"/>
                                     <constraint firstItem="RK0-go-6Xh" firstAttribute="trailing" secondItem="w1B-rf-Odf" secondAttribute="trailing" id="Bhf-R3-gJk"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="370" id="Cwo-ak-D9r"/>
                                     <constraint firstItem="ae6-kM-9Cv" firstAttribute="centerX" secondItem="Crr-s5-rnM" secondAttribute="centerX" id="DHx-Wc-23d"/>
@@ -101,40 +122,50 @@
                                     <constraint firstItem="aJk-N6-Yq8" firstAttribute="leading" secondItem="79A-I4-5Os" secondAttribute="leading" id="NcQ-Oz-WhS"/>
                                     <constraint firstItem="ae6-kM-9Cv" firstAttribute="top" secondItem="w1B-rf-Odf" secondAttribute="bottom" constant="16" id="fFw-Na-6XF"/>
                                     <constraint firstAttribute="bottom" secondItem="aJk-N6-Yq8" secondAttribute="bottom" constant="71" id="gx5-Qg-I98"/>
+                                    <constraint firstItem="VpW-AA-cSG" firstAttribute="centerX" secondItem="lVc-xR-RAT" secondAttribute="centerX" id="jdL-F3-Xk5"/>
                                     <constraint firstItem="lVc-xR-RAT" firstAttribute="centerY" secondItem="qoi-BH-wLf" secondAttribute="centerY" id="mhq-Vo-Mob"/>
                                     <constraint firstItem="aJk-N6-Yq8" firstAttribute="top" secondItem="79A-I4-5Os" secondAttribute="bottom" constant="22" id="p7g-ZL-gUt"/>
                                     <constraint firstItem="aJk-N6-Yq8" firstAttribute="centerY" secondItem="w1B-rf-Odf" secondAttribute="centerY" id="tWC-hO-v6v"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uw0-kK-lFc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uw0-kK-lFc">
                                 <rect key="frame" x="0.0" y="371" width="768" height="613"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.54359829429999995" green="0.038130339239999998" blue="0.068872511390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.21532139182090759" green="0.22286033630371094" blue="0.26020103693008423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.54359829429999995" green="0.038130339239999998" blue="0.068872511390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.54359829429999995" green="0.038130339239999998" blue="0.068872511390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="shop" id="hS7-Ar-rSM" customClass="Parser" customModule="laShop" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="768" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hS7-Ar-rSM" id="kjz-qD-ew4">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nVe-On-z9x">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVe-On-z9x">
                                                     <rect key="frame" x="153.5" y="9.5" width="461" height="101.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKU-6b-mZt">
                                                     <rect key="frame" x="638" y="36" width="115" height="48"/>
-                                                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <state key="normal" title="Button"/>
+                                                    <color key="backgroundColor" red="0.21532139182090759" green="0.22286033630371094" blue="0.26020103693008423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="17"/>
+                                                    <state key="normal" title="Reserver">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KF0-Af-12S">
                                                     <rect key="frame" x="15" y="9.5" width="115" height="101.5"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.70137602090835571" green="0.72183674573898315" blue="0.71354383230209351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" red="1" green="0.75129935930000002" blue="0.59260725719999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.9906039834" green="0.72591048479999998" blue="0.074540816250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="KF0-Af-12S" firstAttribute="centerY" secondItem="nVe-On-z9x" secondAttribute="centerY" id="5MD-GQ-2Da"/>
                                                 <constraint firstItem="KF0-Af-12S" firstAttribute="leading" secondItem="kjz-qD-ew4" secondAttribute="leading" constant="15" id="7Ey-EF-yhj"/>
@@ -151,6 +182,10 @@
                                                 <constraint firstAttribute="trailing" secondItem="bKU-6b-mZt" secondAttribute="trailing" constant="15" id="xFz-uC-j5R"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="buttonReserver" destination="bKU-6b-mZt" id="lbh-M4-old"/>
+                                            <outlet property="textView" destination="nVe-On-z9x" id="xbR-M2-dji"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -160,13 +195,13 @@
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVe-uE-6Lk">
                                 <rect key="frame" x="0.0" y="984" width="768" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.70137602090835571" green="0.72183674573898315" blue="0.71354383230209351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4Xu-rN-1kl"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.21532139182090759" green="0.22286033630371094" blue="0.26020103693008423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.54359829429999995" green="0.038130339239999998" blue="0.068872511390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Crr-s5-rnM" secondAttribute="trailing" id="5ye-yB-Pof"/>
                             <constraint firstItem="fVe-uE-6Lk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7Ij-Rf-ljW"/>
@@ -184,6 +219,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="datePickerFrom" destination="w1B-rf-Odf" id="goC-0B-uda"/>
+                        <outlet property="datePickerTo" destination="aJk-N6-Yq8" id="wis-cE-IfU"/>
                         <outlet property="tableView" destination="uw0-kK-lFc" id="gon-6f-Guj"/>
                     </connections>
                 </viewController>
@@ -241,18 +278,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CW-vi-qbo">
-                                <rect key="frame" x="309" y="274" width="151" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="SECTION PRÊT"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="miJ-es-KGf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T57-fF-ekF">
-                                <rect key="frame" x="309" y="350" width="151" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="SECTION ADMIN"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T57-fF-ekF">
+                                <rect key="frame" x="324.5" y="532" width="120" height="38"/>
+                                <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="17"/>
+                                <state key="normal" title="SECTION ADMIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="showPasswordView:" destination="3SB-jS-uDd" eventType="touchUpInside" id="1O7-FL-2XM"/>
                                 </connections>
@@ -298,8 +329,34 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6eg-w6-M9g">
+                                <rect key="frame" x="264" y="28" width="240" height="130"/>
+                                <color key="backgroundColor" red="0.70137602089999995" green="0.7218367457" blue="0.71354383229999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="OEb-us-Rth"/>
+                                    <constraint firstAttribute="width" constant="240" id="sHs-Ic-bnj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CW-vi-qbo">
+                                <rect key="frame" x="331" y="344" width="107" height="38"/>
+                                <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="17"/>
+                                <state key="normal" title="SECTION PRÊT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="miJ-es-KGf"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.80794676740000004" green="0.86124862879999997" blue="0.52642421390000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.54359829425811768" green="0.038130339235067368" blue="0.068872511386871338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2CW-vi-qbo" firstAttribute="top" secondItem="6eg-w6-M9g" secondAttribute="bottom" constant="186" id="6K1-x9-tU8"/>
+                            <constraint firstItem="6eg-w6-M9g" firstAttribute="top" secondItem="7bt-UE-42r" secondAttribute="bottom" constant="8" id="Kde-ea-i2m"/>
+                            <constraint firstItem="T57-fF-ekF" firstAttribute="centerX" secondItem="Gqk-6J-mf9" secondAttribute="centerX" id="SRv-6F-RRZ"/>
+                            <constraint firstItem="2CW-vi-qbo" firstAttribute="centerX" secondItem="Gqk-6J-mf9" secondAttribute="centerX" id="WdZ-t5-u96"/>
+                            <constraint firstItem="T57-fF-ekF" firstAttribute="top" secondItem="2CW-vi-qbo" secondAttribute="bottom" constant="150" id="YnJ-qB-hes"/>
+                            <constraint firstItem="6eg-w6-M9g" firstAttribute="centerX" secondItem="Gqk-6J-mf9" secondAttribute="centerX" id="pq7-cA-yrR"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="passwordButton" destination="WTr-CV-1qZ" id="OF7-Jh-JOK"/>
@@ -313,6 +370,9 @@
             <point key="canvasLocation" x="-383" y="120"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button3" width="229" height="65"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Qxc-v5-fyW"/>
     </inferredMetricsTieBreakers>

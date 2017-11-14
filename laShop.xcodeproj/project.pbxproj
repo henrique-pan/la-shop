@@ -16,6 +16,17 @@
 		0058B06A1F127B6E008EA176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0058B0691F127B6E008EA176 /* Assets.xcassets */; };
 		0058B06D1F127B6E008EA176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0058B06B1F127B6E008EA176 /* LaunchScreen.storyboard */; };
 		00F85DF31F129877001B2255 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F85DF21F129877001B2255 /* Parser.swift */; };
+		9B3318291FBB99E300EDE65A /* TitilliumWeb-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B33181E1FBB99C400EDE65A /* TitilliumWeb-Light.ttf */; };
+		9B33182A1FBB99E300EDE65A /* TitilliumWeb-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B33181F1FBB99C600EDE65A /* TitilliumWeb-ExtraLightItalic.ttf */; };
+		9B33182B1FBB99E300EDE65A /* TitilliumWeb-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3318201FBB99C800EDE65A /* TitilliumWeb-ExtraLight.ttf */; };
+		9B33182C1FBB99E300EDE65A /* TitilliumWeb-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3318211FBB99CA00EDE65A /* TitilliumWeb-SemiBold.ttf */; };
+		9B33182D1FBB99E300EDE65A /* TitilliumWeb-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3318221FBB99CC00EDE65A /* TitilliumWeb-BoldItalic.ttf */; };
+		9B33182E1FBB99E300EDE65A /* TitilliumWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3318231FBB99D600EDE65A /* TitilliumWeb-Regular.ttf */; };
+		9B33182F1FBB99E300EDE65A /* TitilliumWeb-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3318241FBB99D800EDE65A /* TitilliumWeb-SemiBoldItalic.ttf */; };
+		9B3318301FBB99E300EDE65A /* TitilliumWeb-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3318251FBB99DA00EDE65A /* TitilliumWeb-Italic.ttf */; };
+		9B3318311FBB99E300EDE65A /* TitilliumWeb-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3318261FBB99DC00EDE65A /* TitilliumWeb-Black.ttf */; };
+		9B3318321FBB99E300EDE65A /* TitilliumWeb-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3318271FBB99DF00EDE65A /* TitilliumWeb-LightItalic.ttf */; };
+		9B3318331FBB99E300EDE65A /* TitilliumWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3318281FBB99E100EDE65A /* TitilliumWeb-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +41,17 @@
 		0058B06C1F127B6E008EA176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0058B06E1F127B6E008EA176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00F85DF21F129877001B2255 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		9B33181E1FBB99C400EDE65A /* TitilliumWeb-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Light.ttf"; sourceTree = "<group>"; };
+		9B33181F1FBB99C600EDE65A /* TitilliumWeb-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		9B3318201FBB99C800EDE65A /* TitilliumWeb-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-ExtraLight.ttf"; sourceTree = "<group>"; };
+		9B3318211FBB99CA00EDE65A /* TitilliumWeb-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-SemiBold.ttf"; sourceTree = "<group>"; };
+		9B3318221FBB99CC00EDE65A /* TitilliumWeb-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-BoldItalic.ttf"; sourceTree = "<group>"; };
+		9B3318231FBB99D600EDE65A /* TitilliumWeb-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Regular.ttf"; sourceTree = "<group>"; };
+		9B3318241FBB99D800EDE65A /* TitilliumWeb-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		9B3318251FBB99DA00EDE65A /* TitilliumWeb-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Italic.ttf"; sourceTree = "<group>"; };
+		9B3318261FBB99DC00EDE65A /* TitilliumWeb-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Black.ttf"; sourceTree = "<group>"; };
+		9B3318271FBB99DF00EDE65A /* TitilliumWeb-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-LightItalic.ttf"; sourceTree = "<group>"; };
+		9B3318281FBB99E100EDE65A /* TitilliumWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +84,7 @@
 		0058B0611F127B6E008EA176 /* laShop */ = {
 			isa = PBXGroup;
 			children = (
+				9B33181D1FBB999C00EDE65A /* Fonts */,
 				000CCE541FB20A5800F81C03 /* Animate.swift */,
 				000CCE551FB20A5800F81C03 /* UserDefaultsManager.swift */,
 				0058B0621F127B6E008EA176 /* AppDelegate.swift */,
@@ -74,6 +97,24 @@
 				0058B06E1F127B6E008EA176 /* Info.plist */,
 			);
 			path = laShop;
+			sourceTree = "<group>";
+		};
+		9B33181D1FBB999C00EDE65A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9B3318261FBB99DC00EDE65A /* TitilliumWeb-Black.ttf */,
+				9B3318281FBB99E100EDE65A /* TitilliumWeb-Bold.ttf */,
+				9B3318221FBB99CC00EDE65A /* TitilliumWeb-BoldItalic.ttf */,
+				9B3318201FBB99C800EDE65A /* TitilliumWeb-ExtraLight.ttf */,
+				9B33181F1FBB99C600EDE65A /* TitilliumWeb-ExtraLightItalic.ttf */,
+				9B3318251FBB99DA00EDE65A /* TitilliumWeb-Italic.ttf */,
+				9B33181E1FBB99C400EDE65A /* TitilliumWeb-Light.ttf */,
+				9B3318271FBB99DF00EDE65A /* TitilliumWeb-LightItalic.ttf */,
+				9B3318231FBB99D600EDE65A /* TitilliumWeb-Regular.ttf */,
+				9B3318211FBB99CA00EDE65A /* TitilliumWeb-SemiBold.ttf */,
+				9B3318241FBB99D800EDE65A /* TitilliumWeb-SemiBoldItalic.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,9 +176,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B33182E1FBB99E300EDE65A /* TitilliumWeb-Regular.ttf in Resources */,
+				9B3318321FBB99E300EDE65A /* TitilliumWeb-LightItalic.ttf in Resources */,
+				9B33182A1FBB99E300EDE65A /* TitilliumWeb-ExtraLightItalic.ttf in Resources */,
+				9B33182C1FBB99E300EDE65A /* TitilliumWeb-SemiBold.ttf in Resources */,
+				9B33182B1FBB99E300EDE65A /* TitilliumWeb-ExtraLight.ttf in Resources */,
+				9B33182F1FBB99E300EDE65A /* TitilliumWeb-SemiBoldItalic.ttf in Resources */,
 				0058B06D1F127B6E008EA176 /* LaunchScreen.storyboard in Resources */,
+				9B3318301FBB99E300EDE65A /* TitilliumWeb-Italic.ttf in Resources */,
 				0058B06A1F127B6E008EA176 /* Assets.xcassets in Resources */,
+				9B3318291FBB99E300EDE65A /* TitilliumWeb-Light.ttf in Resources */,
+				9B3318331FBB99E300EDE65A /* TitilliumWeb-Bold.ttf in Resources */,
+				9B33182D1FBB99E300EDE65A /* TitilliumWeb-BoldItalic.ttf in Resources */,
 				0058B0681F127B6E008EA176 /* Main.storyboard in Resources */,
+				9B3318311FBB99E300EDE65A /* TitilliumWeb-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,13 +344,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = laShop/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geneau.laShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -308,13 +360,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = laShop/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geneau.laShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
