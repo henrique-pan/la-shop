@@ -66,12 +66,12 @@
 				000CCE551FB20A5800F81C03 /* UserDefaultsManager.swift */,
 				0058B0621F127B6E008EA176 /* AppDelegate.swift */,
 				0058B0641F127B6E008EA176 /* MainViewController.swift */,
-				0058B0661F127B6E008EA176 /* Main.storyboard */,
+				000CCE581FB20A8100F81C03 /* SectionController.swift */,
 				00F85DF21F129877001B2255 /* Parser.swift */,
+				0058B0661F127B6E008EA176 /* Main.storyboard */,
 				0058B0691F127B6E008EA176 /* Assets.xcassets */,
 				0058B06B1F127B6E008EA176 /* LaunchScreen.storyboard */,
 				0058B06E1F127B6E008EA176 /* Info.plist */,
-				000CCE581FB20A8100F81C03 /* SectionController.swift */,
 			);
 			path = laShop;
 			sourceTree = "<group>";
@@ -108,6 +108,7 @@
 				TargetAttributes = {
 					0058B05E1F127B6E008EA176 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0910;
 					};
 				};
 			};
@@ -291,9 +292,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = laShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geneau.laShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,9 +308,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = laShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geneau.laShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
