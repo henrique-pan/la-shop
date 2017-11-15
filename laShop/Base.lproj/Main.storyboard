@@ -34,8 +34,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="371"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae6-kM-9Cv">
-                                        <rect key="frame" x="334" y="316" width="101" height="38"/>
+                                        <rect key="frame" x="284.5" y="316" width="200" height="45"/>
                                         <color key="backgroundColor" red="0.54359829429999995" green="0.038130339239999998" blue="0.068872511390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Jyb-jj-pfQ"/>
+                                            <constraint firstAttribute="height" constant="45" id="zDx-ya-o32"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="17"/>
                                         <state key="normal" title="SAUVEGARDE">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,9 +64,9 @@
                                             <!--2017-07-09 15:58:33 +0000-->
                                         </date>
                                     </datePicker>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qoi-BH-wLf">
-                                        <rect key="frame" x="55" y="28" width="240" height="85"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header-logo" translatesAutoresizingMaskIntoConstraints="NO" id="qoi-BH-wLf">
+                                        <rect key="frame" x="55" y="40" width="240" height="85"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="UaW-dt-9nx"/>
                                             <constraint firstAttribute="height" constant="85" id="n0M-r9-NMj"/>
@@ -81,7 +85,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVc-xR-RAT">
-                                        <rect key="frame" x="470" y="38.5" width="250" height="65"/>
+                                        <rect key="frame" x="470" y="50.5" width="250" height="65"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="QKc-Te-bgP"/>
                                         </constraints>
@@ -93,7 +97,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interface Principale       " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpW-AA-cSG">
-                                        <rect key="frame" x="495" y="57.5" width="200" height="27.5"/>
+                                        <rect key="frame" x="495" y="69.5" width="200" height="27.5"/>
                                         <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -107,7 +111,7 @@
                                     <constraint firstAttribute="height" constant="371" id="5uv-f6-KEY"/>
                                     <constraint firstItem="lVc-xR-RAT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Crr-s5-rnM" secondAttribute="leading" constant="20" symbolic="YES" id="622-OI-VH6"/>
                                     <constraint firstAttribute="trailing" secondItem="79A-I4-5Os" secondAttribute="trailing" constant="48" id="6G6-8a-93l"/>
-                                    <constraint firstItem="qoi-BH-wLf" firstAttribute="top" secondItem="Crr-s5-rnM" secondAttribute="top" constant="28" id="6Ih-8i-mfq"/>
+                                    <constraint firstItem="qoi-BH-wLf" firstAttribute="top" secondItem="Crr-s5-rnM" secondAttribute="top" constant="40" id="6Ih-8i-mfq"/>
                                     <constraint firstItem="RK0-go-6Xh" firstAttribute="leading" secondItem="qoi-BH-wLf" secondAttribute="leading" id="6TA-QZ-YEK"/>
                                     <constraint firstItem="w1B-rf-Odf" firstAttribute="leading" secondItem="RK0-go-6Xh" secondAttribute="leading" id="7zJ-Em-EkO"/>
                                     <constraint firstItem="79A-I4-5Os" firstAttribute="width" secondItem="RK0-go-6Xh" secondAttribute="width" id="8px-oG-ilj"/>
@@ -160,7 +164,7 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KF0-Af-12S">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="KF0-Af-12S">
                                                     <rect key="frame" x="15" y="9.5" width="115" height="101.5"/>
                                                     <color key="backgroundColor" red="0.70137602090835571" green="0.72183674573898315" blue="0.71354383230209351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
@@ -184,6 +188,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="buttonReserver" destination="bKU-6b-mZt" id="lbh-M4-old"/>
+                                            <outlet property="pictureView" destination="KF0-Af-12S" id="s5c-9H-JH5"/>
                                             <outlet property="textView" destination="nVe-On-z9x" id="xbR-M2-dji"/>
                                         </connections>
                                     </tableViewCell>
@@ -195,7 +200,7 @@
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVe-uE-6Lk">
                                 <rect key="frame" x="0.0" y="984" width="768" height="40"/>
-                                <color key="backgroundColor" red="0.70137602090835571" green="0.72183674573898315" blue="0.71354383230209351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.70137602089999995" green="0.7218367457" blue="0.71354383229999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4Xu-rN-1kl"/>
                                 </constraints>
@@ -219,6 +224,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonSave" destination="ae6-kM-9Cv" id="Dah-xL-Ler"/>
                         <outlet property="datePickerFrom" destination="w1B-rf-Odf" id="goC-0B-uda"/>
                         <outlet property="datePickerTo" destination="aJk-N6-Yq8" id="wis-cE-IfU"/>
                         <outlet property="tableView" destination="uw0-kK-lFc" id="gon-6f-Guj"/>
@@ -372,6 +378,8 @@
     </scenes>
     <resources>
         <image name="button3" width="229" height="65"/>
+        <image name="camera" width="275" height="175"/>
+        <image name="header-logo" width="322" height="124"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Qxc-v5-fyW"/>

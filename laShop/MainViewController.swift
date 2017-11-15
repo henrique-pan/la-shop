@@ -6,22 +6,30 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var datePickerFrom: UIDatePicker!
     @IBOutlet weak var datePickerTo: UIDatePicker!
+    @IBOutlet weak var buttonSave: UIButton!
     //---------------------------//--------------------------- MARK: -------> Properties
     var titles = ["CAMÉRAS", "LENTILLES", "TRÉPIEDS"]
     var numberOfElementsInSections = [12, 5, 3]
     //---------------------------//--------------------------- MARK: -------> viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         datePickerFrom.setValue(UIColor.white, forKeyPath: "textColor")
         datePickerFrom.setValue(false, forKeyPath: "highlightsToday")
         datePickerTo.setValue(UIColor.white, forKeyPath: "textColor")
         datePickerTo.setValue(false, forKeyPath: "highlightsToday")
         
+        buttonSave.layer.cornerRadius = 5
+        buttonSave.layer.borderWidth = 1
+        buttonSave.layer.borderColor = UIColor.black.cgColor
     }
     //---------------------------//--------------------------- MARK: -------> TableView Section Stuff
     func numberOfSections(in tableView: UITableView) -> Int {
         return titles.count
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
