@@ -13,7 +13,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     //---------------------------//--------------------------- MARK: -------> viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         datePickerFrom.setValue(UIColor.white, forKeyPath: "textColor")
         datePickerFrom.setValue(false, forKeyPath: "highlightsToday")
         datePickerTo.setValue(UIColor.white, forKeyPath: "textColor")
@@ -30,6 +30,11 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    @IBAction func interfacePrincipale(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {

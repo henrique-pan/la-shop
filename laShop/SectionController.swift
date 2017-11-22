@@ -14,6 +14,11 @@ class SectionController: UIViewController {
         super.viewDidLoad()
         manageVisuals()
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     //---------------------------//--------------------------- MARK: -------> Show or Hide Password View
     @IBAction func showPasswordView(_ sender: UIButton) {
         animObj.animateHorizontally(duration: 1.0,
