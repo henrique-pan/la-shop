@@ -27,6 +27,8 @@
 		9B3318311FBB99E300EDE65A /* TitilliumWeb-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3318261FBB99DC00EDE65A /* TitilliumWeb-Black.ttf */; };
 		9B3318321FBB99E300EDE65A /* TitilliumWeb-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3318271FBB99DF00EDE65A /* TitilliumWeb-LightItalic.ttf */; };
 		9B3318331FBB99E300EDE65A /* TitilliumWeb-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B3318281FBB99E100EDE65A /* TitilliumWeb-Bold.ttf */; };
+		9B6BE9981FCDEBC20060628D /* Parser2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6BE9951FCDEBC20060628D /* Parser2.swift */; };
+		9B6BE9991FCDEBC20060628D /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6BE9961FCDEBC20060628D /* AdminViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		9B3318261FBB99DC00EDE65A /* TitilliumWeb-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Black.ttf"; sourceTree = "<group>"; };
 		9B3318271FBB99DF00EDE65A /* TitilliumWeb-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-LightItalic.ttf"; sourceTree = "<group>"; };
 		9B3318281FBB99E100EDE65A /* TitilliumWeb-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TitilliumWeb-Bold.ttf"; sourceTree = "<group>"; };
+		9B6BE9951FCDEBC20060628D /* Parser2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser2.swift; sourceTree = "<group>"; };
+		9B6BE9961FCDEBC20060628D /* AdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +92,11 @@
 				000CCE541FB20A5800F81C03 /* Animate.swift */,
 				000CCE551FB20A5800F81C03 /* UserDefaultsManager.swift */,
 				0058B0621F127B6E008EA176 /* AppDelegate.swift */,
+				9B6BE9961FCDEBC20060628D /* AdminViewController.swift */,
 				0058B0641F127B6E008EA176 /* MainViewController.swift */,
 				000CCE581FB20A8100F81C03 /* SectionController.swift */,
 				00F85DF21F129877001B2255 /* Parser.swift */,
+				9B6BE9951FCDEBC20060628D /* Parser2.swift */,
 				0058B0661F127B6E008EA176 /* Main.storyboard */,
 				0058B0691F127B6E008EA176 /* Assets.xcassets */,
 				0058B06B1F127B6E008EA176 /* LaunchScreen.storyboard */,
@@ -200,12 +206,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B6BE9991FCDEBC20060628D /* AdminViewController.swift in Sources */,
 				0058B0651F127B6E008EA176 /* MainViewController.swift in Sources */,
 				000CCE571FB20A5800F81C03 /* UserDefaultsManager.swift in Sources */,
 				0058B0631F127B6E008EA176 /* AppDelegate.swift in Sources */,
 				00F85DF31F129877001B2255 /* Parser.swift in Sources */,
 				000CCE561FB20A5800F81C03 /* Animate.swift in Sources */,
 				000CCE591FB20A8100F81C03 /* SectionController.swift in Sources */,
+				9B6BE9981FCDEBC20060628D /* Parser2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

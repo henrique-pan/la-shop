@@ -6,6 +6,8 @@ class SectionController: UIViewController {
     @IBOutlet weak var passwordView: UIView!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var passwordButton: UIButton!
+    @IBOutlet weak var sectionButton: UIButton!
+    @IBOutlet weak var adminButton: UIButton!
     //---------------------------//--------------------------- MARK: -------> Properties
     let animObj = Animate()
     let userDefObj = UserDefaultsManager()
@@ -13,6 +15,21 @@ class SectionController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         manageVisuals()
+        
+        sectionButton.isHidden = false
+        adminButton.isHidden = false
+        
+        passwordView.layer.cornerRadius = 10
+        passwordView.layer.borderWidth = 1
+        
+        passwordButton.layer.cornerRadius = 5
+        passwordButton.layer.borderWidth = 1
+        passwordButton.layer.borderColor = UIColor.black.cgColor
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        sectionButton.isHidden = false
+        adminButton.isHidden = false
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -21,17 +38,23 @@ class SectionController: UIViewController {
     
     //---------------------------//--------------------------- MARK: -------> Show or Hide Password View
     @IBAction func showPasswordView(_ sender: UIButton) {
-        animObj.animateHorizontally(duration: 1.0,
+        passwordField.becomeFirstResponder()
+        sectionButton.isHidden = true
+        adminButton.isHidden = true
+        animObj.animateHorizontally(duration: 0.5,
                                     aView: passwordView,
-                                    startingPosition: -450,
+                                    startingPosition: -550,
                                     endingPosition: (UIScreen.main.bounds.width - 400) / 2)
     }
     
     @IBAction func hidePasswordView(_ sender: UIButton) {
+        sectionButton.isHidden = false
+        adminButton.isHidden = false
+        passwordField.resignFirstResponder()
         animObj.animateHorizontally(duration: 1.0,
                                     aView: passwordView,
                                     startingPosition: (UIScreen.main.bounds.width - 400) / 2,
-                                    endingPosition: -450)
+                                    endingPosition: -550)
     }
     //---------------------------//--------------------------- MARK: -------> Password Methods
     func manageVisuals() {
@@ -68,6 +91,8 @@ class SectionController: UIViewController {
             return
         }
         if passwordField.text == userDefObj.getValue(theKey: "password") as? String {
+            passwordField.resignFirstResponder()
+            hidePasswordView(passwordButton)
             performSegue(withIdentifier: "admin", sender: nil)
         } else {
             passwordField.text = "Mauvais mot de passe..."
