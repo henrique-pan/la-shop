@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header-logo" translatesAutoresizingMaskIntoConstraints="NO" id="hUK-j6-H1D">
-                                <rect key="frame" x="140" y="418" width="489" height="188"/>
+                                <rect key="frame" x="140" y="44" width="489" height="188"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="489" id="0V7-av-Rlr"/>
                                     <constraint firstAttribute="height" constant="188" id="Wuy-aq-HsZ"/>
@@ -37,7 +37,7 @@
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="KnV-s4-e8g" secondAttribute="bottom" id="LoN-Dv-ZA7"/>
                             <constraint firstAttribute="trailing" secondItem="KnV-s4-e8g" secondAttribute="trailing" id="RRJ-R7-snd"/>
                             <constraint firstItem="hUK-j6-H1D" firstAttribute="centerX" secondItem="KnV-s4-e8g" secondAttribute="centerX" constant="0.5" id="TnI-Jp-6fe"/>
-                            <constraint firstItem="hUK-j6-H1D" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ecs-vp-qoM"/>
+                            <constraint firstItem="hUK-j6-H1D" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-374" id="ecs-vp-qoM"/>
                             <constraint firstItem="KnV-s4-e8g" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="jSK-FR-qhu"/>
                             <constraint firstItem="KnV-s4-e8g" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="uJx-k5-UTo"/>
                         </constraints>
